@@ -59,7 +59,9 @@ For Option 2, also identify what your data question was, and how you went throug
 
 ## References
 
-1. Surname, F. (2021) Title title of titleynesses of article. _Name of Page._ https://urly-ish.ness.business/goods.live.here
+<!--1. Surname, F. (2021) Title title of titleynesses of article. _Name of Page._ https://urly-ish.ness.business/goods.live.here-->
+
+1. Ivan Chavezi. "Causes of Death - Our World In Data". Retrieved from: [_kaggle_](https://www.kaggle.com/datasets/ivanchvez/causes-of-death-our-world-in-data?resource=download) [Online Resource]
 
 1. Hannah Ritchie, Fiona Spooner and Max Roser (2018) - "Causes of death". Published online at _OurWorldInData.org_. Retrieved from: 'https://ourworldindata.org/causes-of-death' [Online Resource]
 
