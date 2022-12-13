@@ -5109,7 +5109,7 @@
         <target field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' />
       </filter>
       <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]'>
-        <groupfilter function='member' level='[none:Year:ok]' member='1990' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <groupfilter function='member' level='[none:Year:ok]' member='2019' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
       </filter>
     </shared-view>
   </shared-views>
@@ -5176,6 +5176,62 @@
       <command command='tsc:tsl-filter'>
         <param name='special-fields' value='all' />
         <param name='target' value='Global Summary' />
+      </command>
+    </action>
+    <action caption='Filter 13 (generated) 1' name='[Action17_A8F131D4426243B49CA35AF139C95DA2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='% Deaths Ages 70+' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated) 1' name='[Action19_F22E4D33DD7E44AC88ED38A755A397A0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='% Deaths Ages 5-14' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
+      </command>
+    </action>
+    <action caption='Filter 9 (generated) 1' name='[Action20_3D1CE64B6DC645D6B81F1AF148BA653B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='% Deaths Ages 15-49' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
+      </command>
+    </action>
+    <action caption='Filter 10 (generated) 1' name='[Action23_A20CD2BCF0B84CA591D50B10D16F0D7A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='% Deaths Ages 50-69' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated) 1' name='[Action24_7EBF677655C54C2DA2D8755E7D9948A1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='% Deaths Ages 0-4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
+      </command>
+    </action>
+    <action caption='Filter 15 (generated) 1' name='[Action26_0442EE9556704348A4C9ECDCC09F0395]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='Top 30 Causes of Death' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
+      </command>
+    </action>
+    <action caption='Filter 14 (generated) 1' name='[Action28_FE1935810D4143BDB6046ECADC0BC92F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Top Causes by Age Groups' type='sheet' worksheet='TreeMap Cause/Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top Causes by Age Groups' />
       </command>
     </action>
     <action caption='Filter 2 (generated)' name='[Action2_6F65E6CF084E4BEDB5B456F842C37FA3]'>
@@ -5261,7 +5317,7 @@
             <column-instance column='[Calculation_1683924088678174722]' derivation='Sum' name='[sum:Calculation_1683924088678174722:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5287,8 +5343,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='17398284.163188517' min='-17943823.390685882' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='15885558.39297796' min='-6484831.3373743631' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='15094883.930207126' min='-15690374.967008904' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='20250365.254623741' min='-9178715.5802254472' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Calculation_1683924088678174722:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
@@ -5340,7 +5396,7 @@
             <column-instance column='[Calculation_1683924088678592515]' derivation='Sum' name='[sum:Calculation_1683924088678592515:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5366,8 +5422,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='16725662.071355317' min='-17237292.18116964' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='15266822.94975663' min='-6230608.1772622941' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='15465552.461279303' min='-18497401.791245654' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='18799349.210122496' min='-7242915.2922383985' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Calculation_1683924088678592515:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
@@ -5419,7 +5475,7 @@
             <column-instance column='[Calculation_1683924088679088132]' derivation='Sum' name='[sum:Calculation_1683924088679088132:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5445,8 +5501,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='15494665.772965606' min='-17863165.190511219' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='14797747.681727588' min='-6316660.3392050853' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='16043765.871129833' min='-17314065.092346989' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='19478071.466470025' min='-10310608.998037217' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Calculation_1683924088679088132:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
@@ -5498,7 +5554,7 @@
             <column-instance column='[Calculation_1683924088679317509]' derivation='Sum' name='[sum:Calculation_1683924088679317509:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5524,8 +5580,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='15905601.700224398' min='-16603485.564901672' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='14401530.734458737' min='-6175650.4874115391' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='15619178.023879673' min='-16889909.241246395' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='20295878.245946076' min='-10781091.422776729' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Calculation_1683924088679317509:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
@@ -5577,7 +5633,7 @@
             <column-instance column='[Calculation_1683924088679456774]' derivation='Sum' name='[sum:Calculation_1683924088679456774:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5603,8 +5659,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='17675413.535467133' min='-18446346.929601796' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='15955420.085813375' min='-6908464.2515382227' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Longitude (generated)]' field-type='quantitative' max='18091747.673628464' min='-18486028.421395645' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Latitude (generated)]' field-type='quantitative' max='17670902.737902019' min='-7368143.0785355363' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Calculation_1683924088679456774:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
@@ -5725,7 +5781,7 @@
             <column-instance column='[0-5 years]' derivation='Sum' name='[sum:0-5 years:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5801,7 +5857,7 @@
             <column-instance column='[15-49 years]' derivation='Sum' name='[sum:15-49 years:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5877,7 +5933,7 @@
             <column-instance column='[5-14 years]' derivation='Sum' name='[sum:5-14 years:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -5953,7 +6009,7 @@
             <column-instance column='[50-69 years]' derivation='Sum' name='[sum:50-69 years:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -6029,7 +6085,7 @@
             <column-instance column='[70+ years]' derivation='Sum' name='[sum:70+ years:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -6104,7 +6160,7 @@
             <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name,Entity (T3 Age Groups.csv))]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action15_8FA0E750ADC546FCA24EA2AC1DAE4F00]' user:ui-enumeration='all' user:ui-marker='enumerate'>
@@ -6284,7 +6340,7 @@
             <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Causes name)]'>
-            <groupfilter function='member' level='[Causes name]' member='&quot;Neoplasms&quot;' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Causes name]' user:ui-action-filter='[Action14_74DFFF1FC1C14027B9CF20CED9FAD291]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[Action (Entity (T3 Age Groups.csv))]'>
             <groupfilter function='level-members' level='[Entity (T3 Age Groups.csv)]' user:ui-action-filter='[Action10_CB2CACA62F1E490CA692367DF572FB22]' user:ui-enumeration='all' user:ui-marker='enumerate' />
@@ -6427,9 +6483,9 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98288' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='856'>
-            <zone h='98288' id='5' type-v2='layout-basic' w='89702' x='468' y='856'>
-              <zone h='60267' id='3' name='Deaths by Country Filter by Year' w='57753' x='32417' y='856'>
+          <zone h='98380' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='810'>
+            <zone h='98380' id='5' type-v2='layout-basic' w='89702' x='468' y='810'>
+              <zone h='60323' id='3' name='Deaths by Country Filter by Year' w='57753' x='32417' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6437,7 +6493,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='62289' id='11' name='Top 30 Causes of Death' w='31949' x='468' y='856'>
+              <zone h='62347' id='11' name='Top 30 Causes of Death' w='31949' x='468' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6445,7 +6501,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='38021' id='15' name='TreeMap Cause/Country' w='57753' x='32417' y='61123'>
+              <zone h='38057' id='15' name='TreeMap Cause/Country' w='57753' x='32417' y='61133'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6453,7 +6509,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='35999' id='16' name='Causes of Death Size/Colour Visualisation' w='31949' x='468' y='63145'>
+              <zone h='36033' id='16' name='Causes of Death Size/Colour Visualisation' w='31949' x='468' y='63157'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6462,8 +6518,8 @@
                 </zone-style>
               </zone>
             </zone>
-            <zone fixed-size='160' h='98288' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='856'>
-              <zone h='13690' id='8' mode='dropdown' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='9362' x='90170' y='856'>
+            <zone fixed-size='160' h='98380' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='810'>
+              <zone h='12956' id='8' mode='dropdown' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='9362' x='90170' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6471,7 +6527,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='8022' id='9' mode='slider' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='9362' x='90170' y='14546'>
+              <zone h='7591' id='9' mode='slider' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='9362' x='90170' y='13766'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6479,7 +6535,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='6952' id='10' name='Deaths by Country Filter by Year' pane-specification-id='1' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Death Numbers:qk]' type-v2='color' w='9362' x='90170' y='22568'>
+              <zone h='6579' id='10' name='Deaths by Country Filter by Year' pane-specification-id='1' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Death Numbers:qk]' type-v2='color' w='9362' x='90170' y='21357'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6487,7 +6543,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='7380' id='17' name='Causes of Death Size/Colour Visualisation' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Death Numbers:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9362' x='90170' y='29520'>
+              <zone h='6984' id='17' name='Causes of Death Size/Colour Visualisation' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[sum:Death Numbers:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9362' x='90170' y='27936'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6509,9 +6565,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98380' id='18' param='vert' type-v2='layout-flow' w='99064' x='468' y='810'>
-                <zone fixed-size='280' h='62348' id='11' is-fixed='true' name='Top 30 Causes of Death' w='31949' x='468' y='810'>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98380' id='22' param='vert' type-v2='layout-flow' w='99064' x='468' y='810'>
+                <zone fixed-size='280' h='62347' id='11' is-fixed='true' name='Top 30 Causes of Death' w='31949' x='468' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6538,7 +6594,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='60324' id='3' is-fixed='true' name='Deaths by Country Filter by Year' w='57753' x='32417' y='810'>
+                <zone fixed-size='280' h='60323' id='3' is-fixed='true' name='Deaths by Country Filter by Year' w='57753' x='32417' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6556,7 +6612,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='38056' id='15' is-fixed='true' name='TreeMap Cause/Country' w='57753' x='32417' y='61134'>
+                <zone fixed-size='280' h='38057' id='15' is-fixed='true' name='TreeMap Cause/Country' w='57753' x='32417' y='61133'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6574,7 +6630,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='36032' id='16' is-fixed='true' name='Causes of Death Size/Colour Visualisation' w='31949' x='468' y='63158'>
+                <zone fixed-size='280' h='36033' id='16' is-fixed='true' name='Causes of Death Size/Colour Visualisation' w='31949' x='468' y='63157'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6596,6 +6652,206 @@
       </devicelayouts>
       <simple-id uuid='{09FA161F-6F65-4886-B0EA-A0F5A8874A8A}' />
     </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Top Causes by Age Groups'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='T1 Summary+' name='federated.1jswnfm04d4xzj14mwdn30gsq6nf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1jswnfm04d4xzj14mwdn30gsq6nf'>
+        <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98380' id='7' param='horz' type-v2='layout-flow' w='99156' x='422' y='810'>
+            <zone h='98380' id='5' type-v2='layout-basic' w='90708' x='422' y='810'>
+              <zone h='49190' id='12' name='% Deaths Ages 5-14' w='29289' x='27817' y='810'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49190' id='16' name='% Deaths Ages 15-49' w='34024' x='57106' y='810'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49190' id='20' name='% Deaths Ages 50-69' w='27395' x='422' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49190' id='24' name='% Deaths Ages 70+' w='38046' x='27817' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49190' id='9' name='% Deaths Ages 0-4' w='27395' x='422' y='810'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49190' id='30' name='TreeMap Cause/Country' show-title='false' w='10237' x='80893' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49190' id='31' name='Top 30 Causes of Death' show-title='false' w='15030' x='65863' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98380' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8448' x='91130' y='810'>
+              <zone h='12956' id='27' mode='dropdown' name='% Deaths Ages 0-4' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='8448' x='91130' y='810'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7591' id='28' mode='slider' name='% Deaths Ages 0-4' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='8448' x='91130' y='13766'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98380' id='36' param='vert' type-v2='layout-flow' w='99156' x='422' y='810'>
+                <zone h='12956' id='27' mode='dropdown' name='% Deaths Ages 0-4' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='8448' x='91130' y='810'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7591' id='28' mode='slider' name='% Deaths Ages 0-4' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='8448' x='91130' y='13766'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='9' is-fixed='true' name='% Deaths Ages 0-4' w='27395' x='422' y='810'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='12' is-fixed='true' name='% Deaths Ages 5-14' w='29289' x='27817' y='810'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='16' is-fixed='true' name='% Deaths Ages 15-49' w='34024' x='57106' y='810'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='20' is-fixed='true' name='% Deaths Ages 50-69' w='27395' x='422' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='24' is-fixed='true' name='% Deaths Ages 70+' w='38046' x='27817' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='31' is-fixed='true' name='Top 30 Causes of Death' show-title='false' w='15030' x='65863' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49190' id='30' is-fixed='true' name='TreeMap Cause/Country' show-title='false' w='10237' x='80893' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{64F7D576-7BF9-4D03-8EAB-18C67503D0D8}' />
+    </dashboard>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='deaths by % and ages'>
       <style />
       <size sizing-mode='automatic' />
@@ -6610,9 +6866,9 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98288' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='856'>
-            <zone h='98288' id='5' type-v2='layout-basic' w='89702' x='468' y='856'>
-              <zone h='24572' id='3' name='Deaths Ages 0-4' w='21767' x='468' y='856'>
+          <zone h='98380' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='810'>
+            <zone h='98380' id='5' type-v2='layout-basic' w='89702' x='468' y='810'>
+              <zone h='24595' id='3' name='Deaths Ages 0-4' w='21767' x='468' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6620,7 +6876,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='12' name='% Deaths Ages 5-14' w='23085' x='22235' y='25428'>
+              <zone h='24595' id='12' name='% Deaths Ages 5-14' w='23085' x='22235' y='25405'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6628,7 +6884,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='14' name='Deaths Ages 15-49' w='21767' x='468' y='50000'>
+              <zone h='24595' id='14' name='Deaths Ages 15-49' w='21767' x='468' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6636,7 +6892,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='10' name='Deaths Ages 5-14' w='21767' x='468' y='25428'>
+              <zone h='24595' id='10' name='Deaths Ages 5-14' w='21767' x='468' y='25405'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6644,7 +6900,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='16' name='% Deaths Ages 15-49' w='23085' x='22235' y='50000'>
+              <zone h='24595' id='16' name='% Deaths Ages 15-49' w='23085' x='22235' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6652,7 +6908,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='18' name='Deaths Ages 50-69' w='21767' x='468' y='74572'>
+              <zone h='24595' id='18' name='Deaths Ages 50-69' w='21767' x='468' y='74595'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6660,7 +6916,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='20' name='% Deaths Ages 50-69' w='23085' x='22235' y='74572'>
+              <zone h='24595' id='20' name='% Deaths Ages 50-69' w='23085' x='22235' y='74595'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6668,7 +6924,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='22' name='Deaths Ages 70+' w='22439' x='45320' y='74572'>
+              <zone h='24595' id='22' name='Deaths Ages 70+' w='22439' x='45320' y='74595'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6676,7 +6932,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='24' name='% Deaths Ages 70+' w='22411' x='67759' y='74572'>
+              <zone h='24595' id='24' name='% Deaths Ages 70+' w='22411' x='67759' y='74595'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6684,7 +6940,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='39739' id='26' name='Deaths by Country Filter by Year' show-title='false' w='44850' x='45320' y='856'>
+              <zone h='39776' id='26' name='Deaths by Country Filter by Year' show-title='false' w='44850' x='45320' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6692,7 +6948,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24572' id='9' name='% Deaths Ages 0-4' w='23085' x='22235' y='856'>
+              <zone h='24595' id='9' name='% Deaths Ages 0-4' w='23085' x='22235' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6700,7 +6956,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='33977' id='30' name='TreeMap Cause/Country' show-title='false' w='22411' x='67759' y='40595'>
+              <zone h='34009' id='30' name='TreeMap Cause/Country' show-title='false' w='22411' x='67759' y='40586'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6708,7 +6964,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='33977' id='31' name='Top 30 Causes of Death' show-title='false' w='22439' x='45320' y='40595'>
+              <zone h='34009' id='31' name='Top 30 Causes of Death' show-title='false' w='22439' x='45320' y='40586'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6717,8 +6973,8 @@
                 </zone-style>
               </zone>
             </zone>
-            <zone fixed-size='160' h='98288' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='856'>
-              <zone h='13690' id='27' mode='dropdown' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='9362' x='90170' y='856'>
+            <zone fixed-size='160' h='98380' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='810'>
+              <zone h='12956' id='27' mode='dropdown' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='9362' x='90170' y='810'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6726,7 +6982,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='8022' id='28' mode='slider' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='9362' x='90170' y='14546'>
+              <zone h='7591' id='28' mode='slider' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='9362' x='90170' y='13766'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -6748,9 +7004,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2950' minheight='2950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98288' id='32' param='vert' type-v2='layout-flow' w='99064' x='468' y='856'>
-                <zone fixed-size='188' h='24572' id='3' is-fixed='true' name='Deaths Ages 0-4' w='21767' x='468' y='856'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98380' id='36' param='vert' type-v2='layout-flow' w='99064' x='468' y='810'>
+                <zone fixed-size='189' h='24595' id='3' is-fixed='true' name='Deaths Ages 0-4' w='21767' x='468' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6759,7 +7015,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='188' h='24572' id='9' is-fixed='true' name='% Deaths Ages 0-4' w='23085' x='22235' y='856'>
+                <zone fixed-size='189' h='24595' id='9' is-fixed='true' name='% Deaths Ages 0-4' w='23085' x='22235' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6768,7 +7024,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='13690' id='27' mode='dropdown' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='9362' x='90170' y='856'>
+                <zone h='12956' id='27' mode='dropdown' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Causes name:nk]' type-v2='filter' w='9362' x='90170' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6777,7 +7033,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='8022' id='28' mode='slider' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='9362' x='90170' y='14546'>
+                <zone h='7591' id='28' mode='slider' name='Deaths by Country Filter by Year' param='[federated.1jswnfm04d4xzj14mwdn30gsq6nf].[none:Year:ok]' type-v2='filter' w='9362' x='90170' y='13766'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6786,7 +7042,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39739' id='26' is-fixed='true' name='Deaths by Country Filter by Year' show-title='false' w='44850' x='45320' y='856'>
+                <zone fixed-size='280' h='39776' id='26' is-fixed='true' name='Deaths by Country Filter by Year' show-title='false' w='44850' x='45320' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6795,7 +7051,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='24572' id='10' is-fixed='true' name='Deaths Ages 5-14' w='21767' x='468' y='25428'>
+                <zone fixed-size='189' h='24595' id='10' is-fixed='true' name='Deaths Ages 5-14' w='21767' x='468' y='25405'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6804,7 +7060,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='24572' id='12' is-fixed='true' name='% Deaths Ages 5-14' w='23085' x='22235' y='25428'>
+                <zone fixed-size='189' h='24595' id='12' is-fixed='true' name='% Deaths Ages 5-14' w='23085' x='22235' y='25405'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6813,7 +7069,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='264' h='33977' id='31' is-fixed='true' name='Top 30 Causes of Death' show-title='false' w='22439' x='45320' y='40595'>
+                <zone fixed-size='264' h='34009' id='31' is-fixed='true' name='Top 30 Causes of Death' show-title='false' w='22439' x='45320' y='40586'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6822,7 +7078,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='264' h='33977' id='30' is-fixed='true' name='TreeMap Cause/Country' show-title='false' w='22411' x='67759' y='40595'>
+                <zone fixed-size='264' h='34009' id='30' is-fixed='true' name='TreeMap Cause/Country' show-title='false' w='22411' x='67759' y='40586'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6831,7 +7087,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='24572' id='14' is-fixed='true' name='Deaths Ages 15-49' w='21767' x='468' y='50000'>
+                <zone fixed-size='189' h='24595' id='14' is-fixed='true' name='Deaths Ages 15-49' w='21767' x='468' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6840,7 +7096,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='24572' id='16' is-fixed='true' name='% Deaths Ages 15-49' w='23085' x='22235' y='50000'>
+                <zone fixed-size='189' h='24595' id='16' is-fixed='true' name='% Deaths Ages 15-49' w='23085' x='22235' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6849,7 +7105,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='188' h='24572' id='18' is-fixed='true' name='Deaths Ages 50-69' w='21767' x='468' y='74572'>
+                <zone fixed-size='189' h='24595' id='18' is-fixed='true' name='Deaths Ages 50-69' w='21767' x='468' y='74595'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6858,7 +7114,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='188' h='24572' id='20' is-fixed='true' name='% Deaths Ages 50-69' w='23085' x='22235' y='74572'>
+                <zone fixed-size='189' h='24595' id='20' is-fixed='true' name='% Deaths Ages 50-69' w='23085' x='22235' y='74595'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6867,7 +7123,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='188' h='24572' id='22' is-fixed='true' name='Deaths Ages 70+' w='22439' x='45320' y='74572'>
+                <zone fixed-size='189' h='24595' id='22' is-fixed='true' name='Deaths Ages 70+' w='22439' x='45320' y='74595'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6876,7 +7132,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='188' h='24572' id='24' is-fixed='true' name='% Deaths Ages 70+' w='22411' x='67759' y='74572'>
+                <zone fixed-size='189' h='24595' id='24' is-fixed='true' name='% Deaths Ages 70+' w='22411' x='67759' y='74595'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -6899,7 +7155,7 @@
       <simple-id uuid='{E1C68284-2D44-4899-B428-F6154CB6425D}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows show-side-pane='false' source-height='30'>
     <window class='worksheet' name='Deaths by Country Filter by Year'>
       <cards>
         <edge name='left'>
@@ -7328,7 +7584,7 @@
       </viewpoint>
       <simple-id uuid='{E70F26E7-73BF-435C-9122-A4C4E74F7120}' />
     </window>
-    <window class='dashboard' maximized='true' name='deaths by % and ages'>
+    <window class='dashboard' name='deaths by % and ages'>
       <viewpoints>
         <viewpoint name='% Deaths Ages 0-4'>
           <zoom type='entire-view' />
@@ -7431,6 +7687,38 @@
         </edge>
       </cards>
       <simple-id uuid='{020D26FC-2923-4471-A905-001B582BF994}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Top Causes by Age Groups'>
+      <viewpoints>
+        <viewpoint name='% Deaths Ages 0-4'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='% Deaths Ages 15-49'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='% Deaths Ages 5-14'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='% Deaths Ages 50-69'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='% Deaths Ages 70+'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Top 30 Causes of Death'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='TreeMap Cause/Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='31' />
+      <simple-id uuid='{2E9833B1-EC56-4096-B663-178B785F9BC2}' />
     </window>
   </windows>
 </workbook>
