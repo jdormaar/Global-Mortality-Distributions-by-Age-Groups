@@ -4,7 +4,7 @@ Jamie Dormaar
 
 [Lighthouse Labs Private Career College](https://www.lighthouselabs.ca/en).
 
-W4 Project 3 - Data Visualization and Dashboards with Tableau
+Data Visualization and Dashboards with Tableau
 
 Dec 9th, 2022
 
@@ -12,11 +12,10 @@ Dec 9th, 2022
 
 ## Project Goals
 
-- Download, familiarize, clean, and transform the data provided in the assignment document [(1)](#ref)
-- Acquire additional data to provide more detail and potentially unique or surprising insights to the global mortality data mentioned above [(2)](#ref).
-- Clean and transform the additional data for Tableau readiness for relationships/joins, and so that it may also convey meaningful information.
-- Utilize Tableau software specialized in generating interactive professional visualizations to generate key insights from a clear and effective interactive dashboard.
-- Present any successfully discovered insights effectively with highly informative, yet intuitive and esthetic visualizations.
+- Acquire additional data for more age related detail and potentially unique or surprising insights [(2)](#ref).
+- Download, familiarize, clean, and transform the data provided [(1)](#ref) and acquired [2-8](#ref)
+- Utilize Tableau software specialized in generating interactive professional dashboard to generate key insights from a clear and effective interactive visualizations.
+- Present discovered insights effectively with highly informative, yet intuitive and esthetic visualizations.
 
 <!--
 (fill in your description and goals here)
@@ -24,13 +23,7 @@ Dec 9th, 2022
 
 ## Introduction
 
-I chose option 2.v from the project assignment (see [Workbook](./Workbook/assignment.md) folder) Using the dataset available from the kaggle website "Cause of Death - Our World in Data" by Ivan Chavezi[(1)](#ref). I also wanted to explore more about this dataset other than the already outlined and described 36 causes of death as accumulated sums around the world.
-
-- for example, this data set contains global annual death summations per country for Neoplasms (meaning "new growths" or cancer). Given that cellular neoplasticity occurs when spontaneous mutations of native cells evade the usually effective and redundant "safety checks" of our tissues; it would make sense that the longer an individual survives, the more probable these infrequent mutations occur. I would therefore suspect that if the total number of a country's deaths were distributed across the ages of the life-span, the data would be skewed to the left.
-- Additionally regarding the above example: considering that the average human life expectancy is not constant around the globe, it would follow that the regions with shorter average human life expectancies would experience fewer proportionate numbers of annual deaths attributed to neoplasms.
-- I was also interested in exploring how the presence/absence of risk factors (capable of increasing average cellular mutation frequencies such as exposure, food/water contaminants, or air quality etc.) would affect the annual mortality rate and if it would also influence the distribution of the age groups affected.
-
-Refer to references numbered [2-8](#ref) for the sources of the additional data sets discussed above.
+I chose to expand on the project assignment (see [Workbook](./Workbook/assignment.md) folder) which uses the dataset available from the kaggle website "Cause of Death - Our World in Data" by Ivan Chavezi[(1)](#ref), by acquiring age data for additional filtering context. Some of the discoveries made given this ability to see the various geographical distributions of human mortalities across the different stages of the life span are very interesting.
 
 <!--
 (Fill in which Option you chose, either 1 or 2. List the dataset you selected for the project if you selected Option 2. Also, discuss the visualizations you created, and why.
@@ -121,6 +114,12 @@ As previously mentioned, if this were an imaginary project that was to receive m
 - Making note of even an abbreviated timeline containing notable mass-casualty events would supplement the data well.
 - Generating visualizations as a function of time.
 - Statistical review for each country, for each cause-of-death, and for each year of the analyzed data was skipped in favour of my rush to get started with the tableau component of the project as soon as possible, so the data should be cleaned thoroughly, and check for outliers, missing values, etc.
+
+- for example, this data set contains global annual death summations per country for Neoplasms (meaning "new growths" or cancer). Given that cellular neoplasticity occurs when spontaneous mutations of native cells evade the usually effective and redundant "safety checks" of our tissues; it would make sense that the longer an individual survives, the more probable these infrequent mutations occur. I would therefore suspect that if the total number of a country's deaths were distributed across the ages of the life-span, the data would be skewed to the left.
+- Additionally regarding the above example: considering that the average human life expectancy is not constant around the globe, it would follow that the regions with shorter average human life expectancies would experience fewer proportionate numbers of annual deaths attributed to neoplasms.
+- I was also interested in exploring how the presence/absence of risk factors (capable of increasing average cellular mutation frequencies such as exposure, food/water contaminants, or air quality etc.) would affect the annual mortality rate and if it would also influence the distribution of the age groups affected.
+
+Refer to references numbered [2-8](#ref) for the sources of the additional data sets discussed above.
 
 <!--
 ## Challenges
