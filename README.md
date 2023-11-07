@@ -23,7 +23,7 @@ Dec 9th, 2022
 
 ## Introduction
 
-I chose to expand on the project assignment (see [Workbook](./Workbook/assignment.md) folder) which uses the dataset available from the kaggle website "Cause of Death - Our World in Data" by Ivan Chavezi[(1)](#ref), by acquiring age data for additional filtering context. Some of the discoveries made given this ability to see the various geographical distributions of human mortalities across the different stages of the life span are very interesting.
+I chose to expand on the project assignment (see [Workbook](./Workbook/assignment.md) folder) which uses the dataset available from the kaggle website "Cause of Death - Our World in Data" by Ivan Chavezi[(1)](#ref), by acquiring age data for additional filtering context. Some of the insights enabled given the ability to see the geographical distributions of mortality densities across different stages of the life span have proved interesting. I present the example of mortalities attributed to cardiovascular diseases, and how the average human life expectancy has changed over time, as well as how having access to modern medical resources can make a significant impact.
 
 <!--
 (Fill in which Option you chose, either 1 or 2. List the dataset you selected for the project if you selected Option 2. Also, discuss the visualizations you created, and why.
