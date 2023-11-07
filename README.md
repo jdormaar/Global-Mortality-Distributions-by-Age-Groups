@@ -104,28 +104,30 @@ One specific visualization generated on this final dashboard I considered pretty
 
 > This figure illustrates the global distributions of each country's mortality percentages attributed to cardiovascular disease in the year 2019 for each of the five age range subgroups: 0-4years, 5-14years, 15-49 years, 50-69 years, and 70+ years of age.
 
-- The first two maps for age ranges 0-4 and 5-14 years of age essentially illustrate the mortalities of congenital heart diseases.
-  - The visual impact of these two images, tell a story about the remarkable scientific and medical advancements we've acomplished, but also the heartbreaking reality
-  - And another remarkable story about the privilege to have access to that.
-- The third and fourth images are likely illustrating a combination of:
-  - again the presence/absence of access to medical resources,
-  - but also how different risk factors to human lives can have influence. If this second hypothetical does exist, it's possible that had I managed to accomplish my plan of also utilizing the risk-factor data [(8)](#references), there might have be some correlational observations to investigate here.
-- The final image, in my opinion, is the most remarkable. For so long, in countless medical journal publications, discussions with colleagues, annual resuscitation certification renewal courses, we've always talked about the seriousness of cardiovascular diseases, as it is our _leading_ cause of mortality. Even above cancer, which is _amazing_ because cancer is a broad umbrella term for at least 100 different diseases! And I'm not saying it isn't serious, but look at this map!! It's also unexpectedly beautiful! Almost like I accidentally created a map illustrating all the locations on our planet where humans can have the opportunity to safely to outlive the endurance of their fuel pump.
+The first two maps for age ranges 0-4 and 5-14 years of age essentially illustrate the mortalities of congenital heart diseases.
+
+- The visual impact of these two images, tell a story about the remarkable scientific and medical advancements we've accomplished, but also the heartbreaking reality regarding the privilege of access to those modern medical advancements.
+
+The next two maps representing age ranges 15-49 years and 50-69 years might also be indicative of the presence/absence of access to medical resources, but it might also be interesting to further investigate the potential impact of different risk factors for some correlational observations [(8)](#references).
+
+The final map which depicts the distribution of cardiovascular disease in individuals aged 70 years and greater, in my opinion, is the most remarkable.
+
+Understanding the seriousness of cardiovascular disease, as it is our _leading_ cause of mortality, has persisted across professional medical and scientific designations as the primary message and focus.
+
+- But look at this map!! It's also unexpectedly **beautiful** as the average life expectancy for even the wealthiest regions didn't exceed 70 years even as recent as 1950.
+
+Almost like I accidentally created a map illustrating all the locations on our planet where humans can experience the opportunity to live within such a safety from which they get to _outlive_ the endurance of their own "fuel pump". Or essentially, die of old age.
 
 ## Discussion:
 
-As previously mentioned, if this were an imaginary project that was to receive more funding, next phases would include:
+Suggestions for improvement or further investigations might include:
 
 - Further data acquisition of each country's annual populations, to more appropriately normalize the data for each country's living population.
-- Making note of even an abbreviated timeline containing notable mass-casualty events would supplement the data well.
-- Generating visualizations as a function of time.
-- Statistical review for each country, for each cause-of-death, and for each year of the analyzed data was skipped in favour of my rush to get started with the tableau component of the project as soon as possible, so the data should be cleaned thoroughly, and check for outliers, missing values, etc.
+- Filtering the data using a timelines of mass-casualty events would supplement the data well by normalizing the annual mortality proportions for any countries affected by them.
 
-- for example, this data set contains global annual death summations per country for Neoplasms (meaning "new growths" or cancer). Given that cellular neoplasticity occurs when spontaneous mutations of native cells evade the usually effective and redundant "safety checks" of our tissues; it would make sense that the longer an individual survives, the more probable these infrequent mutations occur. I would therefore suspect that if the total number of a country's deaths were distributed across the ages of the life-span, the data would be skewed to the left.
-- Additionally regarding the above example: considering that the average human life expectancy is not constant around the globe, it would follow that the regions with shorter average human life expectancies would experience fewer proportionate numbers of annual deaths attributed to neoplasms.
-- I was also interested in exploring how the presence/absence of risk factors (capable of increasing average cellular mutation frequencies such as exposure, food/water contaminants, or air quality etc.) would affect the annual mortality rate and if it would also influence the distribution of the age groups affected.
-
-Refer to references numbered [2-8](#ref) for the sources of the additional data sets discussed above.
+- Investigating neoplasticities across the lifespan would be interesting.
+  - Given that cellular neoplasticity occurs when spontaneous mutations of native cells evade the usually effective and redundant "safety checks" of our tissues; it would make sense that the longer an individual survives, the more probable these infrequent mutations occur.
+  - I would also add a global analysis of certain risk factors to the development of neoplasticities as well.
 
 <!--
 ## Challenges
