@@ -66,21 +66,23 @@ For Option 2, also identify what your data question was, and how you went throug
 
 ![](./Images/bubble_chart.png)
 
-> Similar to the bar chart above, this is an alternative means to visualizing the global leading causes of death. (_If I had to guess a visual similarity to the bubble chart, I'd suggest a Catalase lab-test for anaerobic bacterium using H2O2._)
+> Similar to the bar chart above, this is an alternative means to visualizing the global leading causes of death.
 
 #### FIGURE 5: Interactive Desktop for Top 30 Causes of Death as a Function of Geolocation.
 
 ![](./Images/global_summary_desktop.png)
 
-> This interactive dashboard permits the user to explore the data intuitively by toggling either a Country from the map, which initiates a re-distribution of the top 30 causes accordingly. Or the user may toggle the cause-of-death blocks in the tree map to observe how its density distribution changes globally in the heat map.
+> This interactive dashboard permits the user to explore the data intuitively by toggling either a Country from the map, which initiates a re-distribution of the top 30 causes for that country accordingly. Alternatively, the cause-of-death blocks may be toggled in the tree map to observe how its density distribution changes globally in the heat map.
 
 ---
 
 ### Data normalization:
 
-Fractions of living populations would have been ideal as we are alive, and are therefore bias towards the meaningfulness of that statistical perspective. Unfortunately however, after a disappointed quick search, I instead decided to calculate the normalized fractions of each annual cause-of-death versus the total annual death count for each country. This means that all other values of cause-of-death fractions would be shifted an exaggerated amount if in a given year a country has either an exceptionally high number of deaths, say from a single mass casualty event, or unusually low number of deaths in a year.
+Fractions of living populations would have been ideal as we are alive, and are therefore bias towards the meaningfulness of that statistical perspective.
 
-The percent deaths normalization does permit the approximate comparisons between countries which made for the progress in the new desktop illustrated below.
+However, working with the available data, a percent death normalization was achieved by calculating fractions of each annual cause-of-death versus the total annual death count for each country.
+
+This percent deaths normalization does permit the approximate comparisons between countries which made for the progress in the new desktop illustrated below.
 
 #### FIGURE 5:
 
