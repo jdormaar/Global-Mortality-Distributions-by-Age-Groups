@@ -88,22 +88,24 @@ This percent deaths normalization does permit the approximate comparisons betwee
 
 ![](./Images/deaths_by_year_perc_ages_desktop.png)
 
-> In addition to the previously presented global heat map, bar chart, and treemaps for selective filtering, this dashboard illustrates the effect of the data normalization as a proportion of each populations deaths for each of the five age range subgroups of ages 0-4years, 5-14years, 15-49 years, 50-69 years, and 70+ years of age.
+> In addition to the previously presented global heat map, bar chart, and tree-map for selective filtering, this dashboard illustrates the effect of the data normalization as a proportion of each populations deaths for each of the five age range subgroups of ages 0-4years, 5-14years, 15-49 years, 50-69 years, and 70+ years of age.
 
 ## Results:
 
-This final desk top permits the data to be filtered by age range subgroups, causes of death, geographic location, and the year to focus on various changes over time.
+The final dashboard I created permits the data to be filtered by age range subgroups, causes of death, geographic location, and the year to enable observations over time.
 
-Refer to the [Images folder](./Images/) or the power [point slides](./Workbook/) in the Workbook folder for the series of images I collected as results for the presentation. For those images, although I had added a slide filter the data by year at the beginning of my working with Tableau, I had actually forgotten to interact with the slide filter, or generate any additional illustrations as a function of time.
+Refer to the [Global mortalities 1990-2019.twb](./Workbook/) file in the Workbook folder Tableau desktop file to explore and interact with this final desktop.
 
-One specific interaction with the year-filter on the desktop I created and presented is pretty insightful. I had already considered the global trends of cardiovascular diseases surprising as a cause of death, even when presenting with the filter neglectfully set to "all years". But the difference is worth adding now. The image below is a duplication of that desktop, simplified without the un-normalized maps, and without the original "all ages" map.
+One specific visualization generated on this final dashboard I considered pretty insightful is presented in Figure 6 below.
 
-#### FIGURE 6
+#### FIGURE 6: Cardiovascular Disease by Age Groups for 2019.
 
 ![](./Images/cvd_age_groups_2019.png)
 
-- The first two maps are essentially illustrating the mortalities of congenital heart diseases.
-  - The visual impact of these two images, tell a remarkable story about our species' scientific and medical advancements.
+> This figure illustrates the global distributions of each country's mortality percentages attributed to cardiovascular disease in the year 2019 for each of the five age range subgroups: 0-4years, 5-14years, 15-49 years, 50-69 years, and 70+ years of age.
+
+- The first two maps for age ranges 0-4 and 5-14 years of age essentially illustrate the mortalities of congenital heart diseases.
+  - The visual impact of these two images, tell a story about the remarkable scientific and medical advancements we've acomplished, but also the heartbreaking reality
   - And another remarkable story about the privilege to have access to that.
 - The third and fourth images are likely illustrating a combination of:
   - again the presence/absence of access to medical resources,
