@@ -60,7 +60,7 @@ For Option 2, also identify what your data question was, and how you went throug
 
 ![](./Images/top_30_causes_stacked_bar_chart.png)
 
-> This chart illustrates the top 30 causes of death, and their respective global disease distributions with simple, but quite visually appealing.
+> This chart illustrates the top 30 causes of death, and their respective global disease distributions.
 
 #### FIGURE 4: Top Global Causes of Death
 
