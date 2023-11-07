@@ -84,7 +84,7 @@ However, working with the available data, a percent death normalization was achi
 
 This percent deaths normalization does permit the approximate comparisons between countries which made for the progress in the new desktop illustrated below.
 
-#### FIGURE 5:
+#### FIGURE 5: Effect of Data Normalization Results for Each of 5 Age Range Classification Subgroups
 
 ![](./Images/deaths_by_year_perc_ages_desktop.png)
 
