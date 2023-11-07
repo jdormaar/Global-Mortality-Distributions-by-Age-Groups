@@ -88,9 +88,11 @@ This percent deaths normalization does permit the approximate comparisons betwee
 
 ![](./Images/deaths_by_year_perc_ages_desktop.png)
 
-The new desktop is busy, but I was too impressed at the time by the comparisons it enabled to have simplified it. The upper right map functioned essentially as a country selection key. the center-right Treemap was simplified to a single colour divergence, for key top-cause emphasis, and the groups were removed for the same reason. the smaller maps are in sets of 5 pairs for each age group. Left in each pair is the original heatmap as unaltered counts, and the right of the pairs, a heatmap of the normalization of each cause a calculated fraction of its annual total.
+> In addition to the previously presented global heat map, bar chart, and treemaps for selective filtering, this dashboard illustrates the effect of the data normalization as a proportion of each populations deaths for each of the five age range subgroups of ages 0-4years, 5-14years, 15-49 years, 50-69 years, and 70+ years of age.
 
 ## Results:
+
+This final desk top permits the data to be filtered by age range subgroups, causes of death, geographic location, and the year to focus on various changes over time.
 
 Refer to the [Images folder](./Images/) or the power [point slides](./Workbook/) in the Workbook folder for the series of images I collected as results for the presentation. For those images, although I had added a slide filter the data by year at the beginning of my working with Tableau, I had actually forgotten to interact with the slide filter, or generate any additional illustrations as a function of time.
 
